@@ -7,7 +7,9 @@ Vagrant.configure("2") do |config|
         # Customize the amount of memory on the VM:
         vb.memory = "2048"
       end
-      m.vm.provision "shell", privileged: false, inline: "/vagrant/config_runner/install_docker.sh && /vagrant/config_runner/install_runner.sh && /vagrant/config_runner/register_runner.sh"
+      m.vm.provision "shell", privileged: false, path: "config_runner/install_docker.sh"
+      m.vm.provision "shell", privileged: false, path: "config_runner/install_runner.sh" 
+      m.vm.provision "shell", privileged: false, path: "config_runner/register_runner.sh"
     end  
 end
       
