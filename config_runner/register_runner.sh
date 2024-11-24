@@ -1,7 +1,7 @@
 #!/bin/bash
 URL=https://gitlab.com
 # Coloque o token do seu projeto
-TOKEN=
+TOKEN=glpat-Cbuy4F3ypcyW-AjjZQVh
 EXECUTOR=docker
 DEFAULT_IMAGE=alpine:latest
 
